@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- jquery for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <!-- font awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Kosugi+Maru" rel="stylesheet">
+
+    <!-- Vue.js script source -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <!--Resource para los metodos get y post-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.3.4/vue-resource.min.js"></script>
+
+    <!--Estilos de la pagina-->
+    <link rel="stylesheet" href="estilos/style.css">
+
+
+    <title>Mercadolibre Busquedas</title>
+
+</head>
+
+<body>
+    >
+    <div class="container col-sm-8 col-sm-offset-2">
+        <div id="busquedaMercadolibre">
+
+            <h1>BUSQUEDA ARTICULOS MERCADOLIBRE</h1>
+
+            <div class="panel-defoutl">
+
+
+
+                <form @submit.prevent="buscar">
+                    <div class="form-group">
+                        <label class="control-label">Buscar productos, marcas y más...</label>
+                        <div class="input-group">
+                            <input class="form-control" v-model="sigla" /><span class="input-group-btn">
+                                <button class="btn btn-primary" type="submit" >Buscar</button></span>                               
+                        </div>
+                    </div>
+                </form>
+
+
+
+            </div>
+
+            <table class="table">
+                <thead>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+
+
+                </thead>
+
+
+                <tbody>
+                    <tr v-for='Detalle in Detalles'>
+                        <td>{{ Detalle.title }}</td>
+                        <td>{{ Detalle.price }}</td>
+                        <td><img :src="Detalle.thumbnail" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+   <!-- <script src="/Controller/index.js"></script>-->
+   <script type=text/javascript src=Controller/index.js></script>
+    
+
+</body>
+
+</html>

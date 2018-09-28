@@ -1,0 +1,30 @@
+h1 {
+    font-size: 45px;
+    font-family: 'Arial';
+    text-align: center;
+    color: #2D3277;
+    
+}
+th{
+    font-family: 'Arial';
+    text-align: center;
+}
+div{
+    background-color: #FFE600;
+    color: #333333;
+}
+body{
+    background-color: #E6E4D6;
+}
+tbody{
+    background-color: #FFFFFF;
+    color: #333333;
+}
+table{
+    background-color: #FFFFFF;
+    color: #333333;
+}
+#panel-defoutl{
+    background-color: #FFE600;
+    color: #333333;
+}
