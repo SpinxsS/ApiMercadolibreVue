@@ -36,11 +36,6 @@ $ git commit -am "make it better"
 $ git push heroku master
 
 ``` 
-
-
-
-
-
 _____________________________________________________________________
 ## Para subir vue a docker 
  
