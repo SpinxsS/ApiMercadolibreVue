@@ -31,14 +31,8 @@ Make some changes to the code you just cloned and deploy them to Heroku using Gi
 ``` 
 $ git add .
 
-``` 
-
-``` 
 $ git commit -am "make it better"
-
-``` 
-
-``` 
+ 
 $ git push heroku master
 
 ``` 
@@ -88,18 +82,14 @@ $ Docker run -d -p 8080:"puerto del sercer" "NAME IMAGE DOCKER"
 ## Subir a DockerHub
 ```
 $ export DOCKER_ID_USER='##NAME USER DOCKERHUB'
-```
-```
+
 $ Docker login
-```
-```
+
 username:
 password: 
-```
-```
+
 $ docker tag #NAMEIMAGEDOCKER  username/NAMEIMAGEDOCKER
-```
-```
+
 $ docker push  username/NAMEIMAGEDOCKER
 ```
 
